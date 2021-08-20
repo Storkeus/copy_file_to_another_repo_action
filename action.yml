@@ -25,6 +25,9 @@ inputs:
   commit_message:
     description: 'A custom message for the commmit'
     required: false
+  remove_existing:
+    description: 'Remove existing file or directory from destination before pushing'
+    required: false
 runs:
   using: 'docker'
   image: 'Dockerfile'
